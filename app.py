@@ -11,4 +11,4 @@ for ship in ships.iter():
 		for pilot in ship.pilots:
 			response = requests.get(pilot)
 			data = response.json()
-			print("	"+data["name"])
+			print("	"+data["name"].encode('utf-8'))
